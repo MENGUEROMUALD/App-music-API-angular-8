@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { MusicComponent } from './music/music.component';
+import { MusicListComponent } from './music-list/music-list.component';
+import { LibrairieComponent } from './librairie/librairie.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    MusicComponent,
+    MusicListComponent,
+    LibrairieComponent
   ],
   imports: [
     BrowserModule,
