@@ -9,7 +9,9 @@ import { MusicComponent } from './music/music.component';
 import { MusicListComponent } from './music-list/music-list.component';
 import { LibrairieComponent } from './librairie/librairie.component';
 import { RechercheComponent } from './recherche/recherche.component';
-import { from } from 'rxjs';
+import { HttpClientModule } from '@angular/common/http';
+import { AppConfigModule } from './app-config/app-config.module';
+import { ItuneService } from './model/itune-service';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,13 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AppConfigModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ItuneService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

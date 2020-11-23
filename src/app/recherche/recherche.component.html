@@ -1,8 +1,8 @@
 <div class="container">
     <div class="m-3 text-center">
-        <form class="form-inline" autocomplete="off">
+        <form class="form-inline" autocomplete="off" (ngSubmit)="onSubmit(f)" #f="ngForm">
             <div class="form-group mr-2">
-                <input type="search" class="form-control" placeholder="rechercher un musicien" name="recherche" required >
+                <input type="search" class="form-control" placeholder="rechercher un musicien" name="recherche" ngModel required >
             </div>
             <button class="btn btn-primary" type="submit">Rechercher</button>
         </form>
