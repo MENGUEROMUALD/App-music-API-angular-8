@@ -1,1 +1,11 @@
-<p>music-list works!</p>
+<div class="row mt-5">
+    <div *ngFor="let music of musics" class="card col-md-3 col-lg-2 mb-3 mr-2" style="width: 10rem;" >
+        <img class="card-img-top" src="{{music.artworkUrl60}}" alt="photos">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{music.artistName}}</h5>
+            <p class="card-text"><strong>Titre</strong> : {{music.trackName}}</p>
+            <p class="card-text"><strong>Album</strong> : {{music.collectionName}}</p>
+            <a [routerLink]="['/music',music.trackId]" target="_blank" class="btn btn-primary float-right">Voir plus</a>
+        </div>
+    </div>
+</div>

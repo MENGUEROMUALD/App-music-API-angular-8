@@ -1,1 +1,5 @@
-<p>music works!</p>
+<div class="container">
+    <div class="row" *ngFor="let music of ituneService.listMusic">
+        <h5>{{music.artistName}}</h5>
+    </div>
+</div>

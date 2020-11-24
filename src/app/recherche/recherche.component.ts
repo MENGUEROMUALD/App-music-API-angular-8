@@ -9,7 +9,7 @@ import { ItuneService } from '../model/itune-service';
 })
 export class RechercheComponent implements OnInit {
 
-  constructor( private ituneService: ItuneService) { }
+  constructor(private ituneService: ItuneService) { }
 
   ngOnInit(): void {
   }
